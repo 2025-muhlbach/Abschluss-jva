@@ -1,0 +1,1 @@
+<?php if (file_exists('comments.html')) include 'comments.html'; ?>

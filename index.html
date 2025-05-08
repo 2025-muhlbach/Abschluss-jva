@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JVA Mühlbach – Abschlusszeitung</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>JVA Mühlbach – Abschlusszeitung</h1>
+  <form action="submit.php" method="post" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="Dein Name" required><br>
+    <textarea name="comment" placeholder="Dein Kommentar" required></textarea><br>
+    <input type="file" name="image"><br>
+    <button type="submit">Abschicken</button>
+  </form>
+  <hr>
+  <div id="comments">
+    <?php include 'load_comments.php'; ?>
+  </div>
+</body>
+</html>
